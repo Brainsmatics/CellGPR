@@ -1,16 +1,3 @@
-The markdown content you've provided for the README file is well-organized and clear, which is excellent for GitHub documentation. However, there are minor improvements and corrections you might consider to ensure it is flawless and even more user-friendly:
-
-1. **Code Block Consistency**: The format for running code and other commands should be consistent. The use of the code block for the compilation instruction is correct, but the running code section could be improved for consistency.
-   
-2. **Header Consistency**: Ensure headers are consistently formatted. "Running the Code" can be more aligned with other headers in terms of formatting.
-
-3. **Clarification and Detailing**: Adding a bit more description about what each directory contains could be beneficial, as well as a brief explanation of what "neuronal pairing results" might look like or include.
-
-4. **Formatting Errors**: The last command uses a combination of a markdown inline code and regular text formatting inappropriately.
-
-Here's a revised version:
-
-```markdown
 # CellGPR
 
 We have developed a comprehensive method for automatically integrating functional imaging and structural imaging information at the single neuron level. By inputting data from two-photon calcium imaging and structural slice imaging, the system automatically generates and displays neuronal pairing results. Nine structural slice imaging datasets used for registration and verification are provided, all acquired using the HD-fMOST system with a resolution of 0.65×0.65×2μm³; the functional imaging data comes from two-photon calcium imaging, with a resolution of 1×1μm², covering 22 imaging sites located in layers L2/3 and L5 of the visual cortex. The code for automatic neuronal matching is also provided.

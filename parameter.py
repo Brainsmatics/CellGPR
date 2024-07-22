@@ -1,20 +1,17 @@
+# This script provides parameters for the registration of functional imaging and structural imaging.
+
+# Path to the dataset
 data_path = './data/202277'
 
-# 一般不需要改的参数
-scale_L23 = 0.82 #双光子成像分辨率
-scale_L5 = 0.83
-# scale = 0.83
+# Parameters for detecting neurons in HD-fMOST three-dimensional structural slice imaging
+conf_theta = 0.1  # Confidence threshold for cell recognition
+distance_thread = 8  # Minimum distance between two cells
+batch_size = 2  # Batch size for predictions
+model_path = './Neuron_Detection/model.pth'  # Path to load the trained model
 
-# 识别的参数
-conf_theta = 0.1 # 细胞识别的置信度
-distance_thread = 8 # 两个细胞最近距离
-batch_size = 2 # 根据显卡环境可以改
-model_path = './deep_detection/model.pth'
-
-
-# 匹配的参数
-thickness_L23 = 30 # 双光子成像厚度
-thickness_L5 = 70
-theta = 20 #边相似度参数
-step0 = 10 # 每次步进距离
-# thickness1 = 50 #结果图中的投影厚度
+# Parameters for matching
+thickness_L23 = 30  # Thickness for two-photon imaging of Layer 2/3, default is 30μmc
+thickness_L5 = 70  # Thickness for two-photon imaging of Layer 5, default is 70μm
+theta = 1e-2  # Exponential parameter for evaluating hyperedge similarity
+step0 = 10  # Step size in iterative calculations
+dll_path = 'C:/Program Files/Git/mingw64/bin' # Path to the DLL file 

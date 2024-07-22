@@ -61,7 +61,7 @@ def get_closest_points(data1, data2, distance_thread):
         print(s[j, i])
     return res0
 
-def get_closest_points1(data1, data2, distance_thread):
+def get_closest_points_res(data1, data2, distance_thread):
     assert len(data1) >= len(data2)
     # remove outliers
     index0 = []

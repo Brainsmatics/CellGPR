@@ -1,5 +1,8 @@
 # CellGPR
 
+![alt text](fig/pipeline.jpg)
+
+
 We have developed a comprehensive method for automatically integrating functional imaging and structural imaging information at the single neuron level. By inputting data from two-photon calcium imaging and structural slice imaging, the system automatically generates and displays neuronal pairing results. Nine structural slice imaging datasets used for registration and verification are provided, all acquired using the HD-fMOST system with a resolution of 0.65×0.65×2μm³; the functional imaging data comes from two-photon calcium imaging, with a resolution of 1×1μm², covering 22 imaging sites located in layers L2/3 and L5 of the visual cortex. The code for automatic neuronal matching is also provided.
 
 ## Installation
@@ -41,4 +44,6 @@ Place the datasets to be matched in the data directory. The parameter.py file co
 ```bash
 python run_matching.py
 ```
+Matching results can be found at results folder. Here is an example of matching results.
 
+![alt text](fig/res.jpg)
